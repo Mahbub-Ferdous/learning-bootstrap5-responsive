@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap-css-cdn -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Modals in bootstrap</title>
+    <style>
+      .bg-color {
+        background-color: #155263;
+        width: 10vw;
+      }
+      .bg-div {
+        background-color: #1a1831;
+      }
+      .bg-div2 {
+        background-color: #5f6769;
+      }
+      .btn-color2 {
+        background-color: #118a7e;
+        width: 6vw;
+      }
+      .btn-width {
+        width: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- exploring -modal-dialog-start -->
+
+    <div class="container d-flex justify-content-center mt-5">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn bg-color rounded-pill fw-bold text-white"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-div2">
+            <div class="modal-header bg-div text-white">
+              <h5 class="modal-title" id="exampleModalLabel">Hellow Dear</h5>
+              <button
+                type="button"
+                class="btn-close rounded-pill fw-bold text-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Do you wanna go there??</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-color2 rounded-pill fw-bold text-white"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-color2 btn-width rounded-pill fw-bold text-white"
+              >
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- exploring -modal-dialog-end -->
+
+    <!-- bootstrap-javascript-cdn -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
